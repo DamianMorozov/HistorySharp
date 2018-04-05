@@ -20,6 +20,7 @@ namespace Version2
 
         private class SomeClass { }
 
+        // Generics
         private void buttonGenerics_Click(object sender, EventArgs e)
         {
             log.Clear();
@@ -46,7 +47,78 @@ namespace Version2
             log.AppendText("listSomeClass.Add(new SomeClass());" + Environment.NewLine + Environment.NewLine);
         }
 
-        #endregion
+        public partial class Employee
+        {
+            public void DoWork()
+            {
+            }
+        }
 
+        public partial class Employee
+        {
+            public void GoToLunch()
+            {
+            }
+        }
+        
+        // Partial Classes and Methods
+        private void buttonPartialTypes_Click(object sender, EventArgs e)
+        {
+            log.Clear();
+
+            log.AppendText(
+@"public partial class Employee
+{
+    public void DoWork()
+    {
     }
+}
+
+public partial class Employee
+{
+    public void GoToLunch()
+    {
+    }
+}
+
+----------------------------------------------------------------------
+
+[SerializableAttribute]
+partial class Moon { }
+
+[ObsoleteAttribute]
+partial class Moon { }
+
+They are equivalent to the following declarations:
+--------------------------------------------------
+[SerializableAttribute]
+[ObsoleteAttribute]
+class Moon { }
+
+----------------------------------------------------------------------
+
+partial class Earth : Planet, IRotate { }
+partial class Earth : IRevolve { }
+
+They are equivalent to the following declarations:
+--------------------------------------------------
+class Earth : Planet, IRotate, IRevolve { }
+
+----------------------------------------------------------------------
+partial class ClassWithNestedClass
+{
+    partial class NestedClass { }
+}
+
+partial class ClassWithNestedClass
+{
+    partial class NestedClass { }
+}
+");
+
+        }
+    }
+
+
+    #endregion
 }

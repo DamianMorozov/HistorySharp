@@ -30,6 +30,8 @@
         {
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageGenerics = new System.Windows.Forms.TabPage();
+            this.buttonGenerics = new System.Windows.Forms.Button();
+            this.labelGenerics = new System.Windows.Forms.Label();
             this.tabPagePartialTypes = new System.Windows.Forms.TabPage();
             this.tabPageAnonymousMethods = new System.Windows.Forms.TabPage();
             this.tabPageIterators = new System.Windows.Forms.TabPage();
@@ -38,11 +40,12 @@
             this.tabPageDelegates = new System.Windows.Forms.TabPage();
             this.tabPageCovariance = new System.Windows.Forms.TabPage();
             this.tabPageStaticClasses = new System.Windows.Forms.TabPage();
-            this.labelGenerics = new System.Windows.Forms.Label();
-            this.buttonGenerics = new System.Windows.Forms.Button();
             this.log = new System.Windows.Forms.RichTextBox();
+            this.labelPartialTypes = new System.Windows.Forms.Label();
+            this.buttonPartialTypes = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPageGenerics.SuspendLayout();
+            this.tabPagePartialTypes.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -60,7 +63,7 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(624, 150);
+            this.tabControl.Size = new System.Drawing.Size(784, 105);
             this.tabControl.TabIndex = 0;
             // 
             // tabPageGenerics
@@ -71,93 +74,9 @@
             this.tabPageGenerics.Location = new System.Drawing.Point(4, 22);
             this.tabPageGenerics.Name = "tabPageGenerics";
             this.tabPageGenerics.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGenerics.Size = new System.Drawing.Size(616, 124);
+            this.tabPageGenerics.Size = new System.Drawing.Size(616, 74);
             this.tabPageGenerics.TabIndex = 0;
             this.tabPageGenerics.Text = "Generics";
-            // 
-            // tabPagePartialTypes
-            // 
-            this.tabPagePartialTypes.BackColor = System.Drawing.Color.Transparent;
-            this.tabPagePartialTypes.Location = new System.Drawing.Point(4, 22);
-            this.tabPagePartialTypes.Name = "tabPagePartialTypes";
-            this.tabPagePartialTypes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePartialTypes.Size = new System.Drawing.Size(616, 124);
-            this.tabPagePartialTypes.TabIndex = 1;
-            this.tabPagePartialTypes.Text = "Partial types";
-            // 
-            // tabPageAnonymousMethods
-            // 
-            this.tabPageAnonymousMethods.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageAnonymousMethods.Location = new System.Drawing.Point(4, 22);
-            this.tabPageAnonymousMethods.Name = "tabPageAnonymousMethods";
-            this.tabPageAnonymousMethods.Size = new System.Drawing.Size(616, 416);
-            this.tabPageAnonymousMethods.TabIndex = 2;
-            this.tabPageAnonymousMethods.Text = "Anonymous methods";
-            // 
-            // tabPageIterators
-            // 
-            this.tabPageIterators.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageIterators.Location = new System.Drawing.Point(4, 22);
-            this.tabPageIterators.Name = "tabPageIterators";
-            this.tabPageIterators.Size = new System.Drawing.Size(616, 416);
-            this.tabPageIterators.TabIndex = 3;
-            this.tabPageIterators.Text = "Iterators";
-            // 
-            // tabPageNullableTypes
-            // 
-            this.tabPageNullableTypes.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageNullableTypes.Location = new System.Drawing.Point(4, 22);
-            this.tabPageNullableTypes.Name = "tabPageNullableTypes";
-            this.tabPageNullableTypes.Size = new System.Drawing.Size(616, 416);
-            this.tabPageNullableTypes.TabIndex = 4;
-            this.tabPageNullableTypes.Text = "Nullable types";
-            // 
-            // tabPageProperties
-            // 
-            this.tabPageProperties.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageProperties.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProperties.Name = "tabPageProperties";
-            this.tabPageProperties.Size = new System.Drawing.Size(616, 416);
-            this.tabPageProperties.TabIndex = 5;
-            this.tabPageProperties.Text = "Properties";
-            // 
-            // tabPageDelegates
-            // 
-            this.tabPageDelegates.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageDelegates.Location = new System.Drawing.Point(4, 22);
-            this.tabPageDelegates.Name = "tabPageDelegates";
-            this.tabPageDelegates.Size = new System.Drawing.Size(616, 416);
-            this.tabPageDelegates.TabIndex = 6;
-            this.tabPageDelegates.Text = "Delegates";
-            // 
-            // tabPageCovariance
-            // 
-            this.tabPageCovariance.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageCovariance.Location = new System.Drawing.Point(4, 22);
-            this.tabPageCovariance.Name = "tabPageCovariance";
-            this.tabPageCovariance.Size = new System.Drawing.Size(616, 416);
-            this.tabPageCovariance.TabIndex = 7;
-            this.tabPageCovariance.Text = "Covariance";
-            // 
-            // tabPageStaticClasses
-            // 
-            this.tabPageStaticClasses.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageStaticClasses.Location = new System.Drawing.Point(4, 22);
-            this.tabPageStaticClasses.Name = "tabPageStaticClasses";
-            this.tabPageStaticClasses.Size = new System.Drawing.Size(616, 416);
-            this.tabPageStaticClasses.TabIndex = 8;
-            this.tabPageStaticClasses.Text = "StaticClasses";
-            // 
-            // labelGenerics
-            // 
-            this.labelGenerics.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelGenerics.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelGenerics.Location = new System.Drawing.Point(3, 3);
-            this.labelGenerics.Name = "labelGenerics";
-            this.labelGenerics.Size = new System.Drawing.Size(610, 30);
-            this.labelGenerics.TabIndex = 0;
-            this.labelGenerics.Text = "Generics";
-            this.labelGenerics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonGenerics
             // 
@@ -170,22 +89,131 @@
             this.buttonGenerics.UseVisualStyleBackColor = true;
             this.buttonGenerics.Click += new System.EventHandler(this.buttonGenerics_Click);
             // 
+            // labelGenerics
+            // 
+            this.labelGenerics.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelGenerics.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelGenerics.Location = new System.Drawing.Point(3, 3);
+            this.labelGenerics.Name = "labelGenerics";
+            this.labelGenerics.Size = new System.Drawing.Size(610, 30);
+            this.labelGenerics.TabIndex = 0;
+            this.labelGenerics.Text = "Generics";
+            this.labelGenerics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPagePartialTypes
+            // 
+            this.tabPagePartialTypes.BackColor = System.Drawing.Color.Transparent;
+            this.tabPagePartialTypes.Controls.Add(this.buttonPartialTypes);
+            this.tabPagePartialTypes.Controls.Add(this.labelPartialTypes);
+            this.tabPagePartialTypes.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePartialTypes.Name = "tabPagePartialTypes";
+            this.tabPagePartialTypes.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePartialTypes.Size = new System.Drawing.Size(776, 79);
+            this.tabPagePartialTypes.TabIndex = 1;
+            this.tabPagePartialTypes.Text = "Partial types";
+            // 
+            // tabPageAnonymousMethods
+            // 
+            this.tabPageAnonymousMethods.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageAnonymousMethods.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAnonymousMethods.Name = "tabPageAnonymousMethods";
+            this.tabPageAnonymousMethods.Size = new System.Drawing.Size(616, 124);
+            this.tabPageAnonymousMethods.TabIndex = 2;
+            this.tabPageAnonymousMethods.Text = "Anonymous methods";
+            // 
+            // tabPageIterators
+            // 
+            this.tabPageIterators.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageIterators.Location = new System.Drawing.Point(4, 22);
+            this.tabPageIterators.Name = "tabPageIterators";
+            this.tabPageIterators.Size = new System.Drawing.Size(616, 124);
+            this.tabPageIterators.TabIndex = 3;
+            this.tabPageIterators.Text = "Iterators";
+            // 
+            // tabPageNullableTypes
+            // 
+            this.tabPageNullableTypes.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageNullableTypes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageNullableTypes.Name = "tabPageNullableTypes";
+            this.tabPageNullableTypes.Size = new System.Drawing.Size(616, 124);
+            this.tabPageNullableTypes.TabIndex = 4;
+            this.tabPageNullableTypes.Text = "Nullable types";
+            // 
+            // tabPageProperties
+            // 
+            this.tabPageProperties.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageProperties.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProperties.Name = "tabPageProperties";
+            this.tabPageProperties.Size = new System.Drawing.Size(616, 124);
+            this.tabPageProperties.TabIndex = 5;
+            this.tabPageProperties.Text = "Properties";
+            // 
+            // tabPageDelegates
+            // 
+            this.tabPageDelegates.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageDelegates.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDelegates.Name = "tabPageDelegates";
+            this.tabPageDelegates.Size = new System.Drawing.Size(616, 124);
+            this.tabPageDelegates.TabIndex = 6;
+            this.tabPageDelegates.Text = "Delegates";
+            // 
+            // tabPageCovariance
+            // 
+            this.tabPageCovariance.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageCovariance.Location = new System.Drawing.Point(4, 22);
+            this.tabPageCovariance.Name = "tabPageCovariance";
+            this.tabPageCovariance.Size = new System.Drawing.Size(616, 124);
+            this.tabPageCovariance.TabIndex = 7;
+            this.tabPageCovariance.Text = "Covariance";
+            // 
+            // tabPageStaticClasses
+            // 
+            this.tabPageStaticClasses.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageStaticClasses.Location = new System.Drawing.Point(4, 22);
+            this.tabPageStaticClasses.Name = "tabPageStaticClasses";
+            this.tabPageStaticClasses.Size = new System.Drawing.Size(616, 124);
+            this.tabPageStaticClasses.TabIndex = 8;
+            this.tabPageStaticClasses.Text = "StaticClasses";
+            // 
             // log
             // 
             this.log.BackColor = System.Drawing.SystemColors.Control;
             this.log.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.log.Location = new System.Drawing.Point(0, 150);
+            this.log.Location = new System.Drawing.Point(0, 105);
             this.log.Name = "log";
             this.log.ReadOnly = true;
-            this.log.Size = new System.Drawing.Size(624, 292);
+            this.log.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.log.Size = new System.Drawing.Size(784, 457);
             this.log.TabIndex = 3;
             this.log.Text = "";
+            // 
+            // labelPartialTypes
+            // 
+            this.labelPartialTypes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPartialTypes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelPartialTypes.Location = new System.Drawing.Point(3, 3);
+            this.labelPartialTypes.Name = "labelPartialTypes";
+            this.labelPartialTypes.Size = new System.Drawing.Size(770, 30);
+            this.labelPartialTypes.TabIndex = 1;
+            this.labelPartialTypes.Text = "Partial Classes and Methods";
+            this.labelPartialTypes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonPartialTypes
+            // 
+            this.buttonPartialTypes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonPartialTypes.Location = new System.Drawing.Point(3, 33);
+            this.buttonPartialTypes.Name = "buttonPartialTypes";
+            this.buttonPartialTypes.Size = new System.Drawing.Size(770, 23);
+            this.buttonPartialTypes.TabIndex = 2;
+            this.buttonPartialTypes.Text = "Create and use";
+            this.buttonPartialTypes.UseVisualStyleBackColor = true;
+            this.buttonPartialTypes.Click += new System.EventHandler(this.buttonPartialTypes_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 442);
+            this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.log);
             this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -196,6 +224,7 @@
             this.Text = "C# version 2";
             this.tabControl.ResumeLayout(false);
             this.tabPageGenerics.ResumeLayout(false);
+            this.tabPagePartialTypes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -215,6 +244,8 @@
         private System.Windows.Forms.Button buttonGenerics;
         private System.Windows.Forms.Label labelGenerics;
         private System.Windows.Forms.RichTextBox log;
+        private System.Windows.Forms.Button buttonPartialTypes;
+        private System.Windows.Forms.Label labelPartialTypes;
     }
 }
 
