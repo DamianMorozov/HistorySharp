@@ -28,224 +28,157 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPageGenerics = new System.Windows.Forms.TabPage();
-            this.buttonGenerics = new System.Windows.Forms.Button();
-            this.labelGenerics = new System.Windows.Forms.Label();
-            this.tabPagePartialTypes = new System.Windows.Forms.TabPage();
-            this.tabPageAnonymousMethods = new System.Windows.Forms.TabPage();
-            this.tabPageIterators = new System.Windows.Forms.TabPage();
-            this.tabPageNullableTypes = new System.Windows.Forms.TabPage();
-            this.tabPageProperties = new System.Windows.Forms.TabPage();
-            this.tabPageDelegates = new System.Windows.Forms.TabPage();
-            this.tabPageCovariance = new System.Windows.Forms.TabPage();
-            this.tabPageStaticClasses = new System.Windows.Forms.TabPage();
             this.log = new System.Windows.Forms.RichTextBox();
-            this.labelPartialTypes = new System.Windows.Forms.Label();
+            this.buttonGenerics = new System.Windows.Forms.Button();
             this.buttonPartialTypes = new System.Windows.Forms.Button();
-            this.tabControl.SuspendLayout();
-            this.tabPageGenerics.SuspendLayout();
-            this.tabPagePartialTypes.SuspendLayout();
+            this.buttonAnonymousMethods = new System.Windows.Forms.Button();
+            this.buttonIterators = new System.Windows.Forms.Button();
+            this.buttonNullableTypes = new System.Windows.Forms.Button();
+            this.buttonProperties = new System.Windows.Forms.Button();
+            this.buttonDelegates = new System.Windows.Forms.Button();
+            this.buttonCovariance = new System.Windows.Forms.Button();
+            this.buttonStaticClasses = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // tabControl
-            // 
-            this.tabControl.Controls.Add(this.tabPageGenerics);
-            this.tabControl.Controls.Add(this.tabPagePartialTypes);
-            this.tabControl.Controls.Add(this.tabPageAnonymousMethods);
-            this.tabControl.Controls.Add(this.tabPageIterators);
-            this.tabControl.Controls.Add(this.tabPageNullableTypes);
-            this.tabControl.Controls.Add(this.tabPageProperties);
-            this.tabControl.Controls.Add(this.tabPageDelegates);
-            this.tabControl.Controls.Add(this.tabPageCovariance);
-            this.tabControl.Controls.Add(this.tabPageStaticClasses);
-            this.tabControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabControl.Location = new System.Drawing.Point(0, 0);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(784, 105);
-            this.tabControl.TabIndex = 0;
-            // 
-            // tabPageGenerics
-            // 
-            this.tabPageGenerics.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageGenerics.Controls.Add(this.buttonGenerics);
-            this.tabPageGenerics.Controls.Add(this.labelGenerics);
-            this.tabPageGenerics.Location = new System.Drawing.Point(4, 22);
-            this.tabPageGenerics.Name = "tabPageGenerics";
-            this.tabPageGenerics.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGenerics.Size = new System.Drawing.Size(616, 74);
-            this.tabPageGenerics.TabIndex = 0;
-            this.tabPageGenerics.Text = "Generics";
-            // 
-            // buttonGenerics
-            // 
-            this.buttonGenerics.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonGenerics.Location = new System.Drawing.Point(3, 33);
-            this.buttonGenerics.Name = "buttonGenerics";
-            this.buttonGenerics.Size = new System.Drawing.Size(610, 23);
-            this.buttonGenerics.TabIndex = 1;
-            this.buttonGenerics.Text = "Create and use";
-            this.buttonGenerics.UseVisualStyleBackColor = true;
-            this.buttonGenerics.Click += new System.EventHandler(this.buttonGenerics_Click);
-            // 
-            // labelGenerics
-            // 
-            this.labelGenerics.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelGenerics.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelGenerics.Location = new System.Drawing.Point(3, 3);
-            this.labelGenerics.Name = "labelGenerics";
-            this.labelGenerics.Size = new System.Drawing.Size(610, 30);
-            this.labelGenerics.TabIndex = 0;
-            this.labelGenerics.Text = "Generics";
-            this.labelGenerics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tabPagePartialTypes
-            // 
-            this.tabPagePartialTypes.BackColor = System.Drawing.Color.Transparent;
-            this.tabPagePartialTypes.Controls.Add(this.buttonPartialTypes);
-            this.tabPagePartialTypes.Controls.Add(this.labelPartialTypes);
-            this.tabPagePartialTypes.Location = new System.Drawing.Point(4, 22);
-            this.tabPagePartialTypes.Name = "tabPagePartialTypes";
-            this.tabPagePartialTypes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePartialTypes.Size = new System.Drawing.Size(776, 79);
-            this.tabPagePartialTypes.TabIndex = 1;
-            this.tabPagePartialTypes.Text = "Partial types";
-            // 
-            // tabPageAnonymousMethods
-            // 
-            this.tabPageAnonymousMethods.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageAnonymousMethods.Location = new System.Drawing.Point(4, 22);
-            this.tabPageAnonymousMethods.Name = "tabPageAnonymousMethods";
-            this.tabPageAnonymousMethods.Size = new System.Drawing.Size(616, 124);
-            this.tabPageAnonymousMethods.TabIndex = 2;
-            this.tabPageAnonymousMethods.Text = "Anonymous methods";
-            // 
-            // tabPageIterators
-            // 
-            this.tabPageIterators.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageIterators.Location = new System.Drawing.Point(4, 22);
-            this.tabPageIterators.Name = "tabPageIterators";
-            this.tabPageIterators.Size = new System.Drawing.Size(616, 124);
-            this.tabPageIterators.TabIndex = 3;
-            this.tabPageIterators.Text = "Iterators";
-            // 
-            // tabPageNullableTypes
-            // 
-            this.tabPageNullableTypes.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageNullableTypes.Location = new System.Drawing.Point(4, 22);
-            this.tabPageNullableTypes.Name = "tabPageNullableTypes";
-            this.tabPageNullableTypes.Size = new System.Drawing.Size(616, 124);
-            this.tabPageNullableTypes.TabIndex = 4;
-            this.tabPageNullableTypes.Text = "Nullable types";
-            // 
-            // tabPageProperties
-            // 
-            this.tabPageProperties.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageProperties.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProperties.Name = "tabPageProperties";
-            this.tabPageProperties.Size = new System.Drawing.Size(616, 124);
-            this.tabPageProperties.TabIndex = 5;
-            this.tabPageProperties.Text = "Properties";
-            // 
-            // tabPageDelegates
-            // 
-            this.tabPageDelegates.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageDelegates.Location = new System.Drawing.Point(4, 22);
-            this.tabPageDelegates.Name = "tabPageDelegates";
-            this.tabPageDelegates.Size = new System.Drawing.Size(616, 124);
-            this.tabPageDelegates.TabIndex = 6;
-            this.tabPageDelegates.Text = "Delegates";
-            // 
-            // tabPageCovariance
-            // 
-            this.tabPageCovariance.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageCovariance.Location = new System.Drawing.Point(4, 22);
-            this.tabPageCovariance.Name = "tabPageCovariance";
-            this.tabPageCovariance.Size = new System.Drawing.Size(616, 124);
-            this.tabPageCovariance.TabIndex = 7;
-            this.tabPageCovariance.Text = "Covariance";
-            // 
-            // tabPageStaticClasses
-            // 
-            this.tabPageStaticClasses.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageStaticClasses.Location = new System.Drawing.Point(4, 22);
-            this.tabPageStaticClasses.Name = "tabPageStaticClasses";
-            this.tabPageStaticClasses.Size = new System.Drawing.Size(616, 124);
-            this.tabPageStaticClasses.TabIndex = 8;
-            this.tabPageStaticClasses.Text = "StaticClasses";
             // 
             // log
             // 
             this.log.BackColor = System.Drawing.SystemColors.Control;
-            this.log.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.log.Location = new System.Drawing.Point(0, 105);
+            this.log.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.log.Location = new System.Drawing.Point(0, 190);
             this.log.Name = "log";
             this.log.ReadOnly = true;
             this.log.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.log.Size = new System.Drawing.Size(784, 457);
+            this.log.Size = new System.Drawing.Size(684, 372);
             this.log.TabIndex = 3;
             this.log.Text = "";
+            this.log.TextChanged += new System.EventHandler(this.log_TextChanged);
             // 
-            // labelPartialTypes
+            // buttonGenerics
             // 
-            this.labelPartialTypes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelPartialTypes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelPartialTypes.Location = new System.Drawing.Point(3, 3);
-            this.labelPartialTypes.Name = "labelPartialTypes";
-            this.labelPartialTypes.Size = new System.Drawing.Size(770, 30);
-            this.labelPartialTypes.TabIndex = 1;
-            this.labelPartialTypes.Text = "Partial Classes and Methods";
-            this.labelPartialTypes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonGenerics.Location = new System.Drawing.Point(10, 10);
+            this.buttonGenerics.Name = "buttonGenerics";
+            this.buttonGenerics.Size = new System.Drawing.Size(200, 23);
+            this.buttonGenerics.TabIndex = 4;
+            this.buttonGenerics.Text = "Generics";
+            this.buttonGenerics.UseVisualStyleBackColor = true;
+            this.buttonGenerics.Click += new System.EventHandler(this.ButtonGenerics_Click);
             // 
             // buttonPartialTypes
             // 
-            this.buttonPartialTypes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonPartialTypes.Location = new System.Drawing.Point(3, 33);
+            this.buttonPartialTypes.Location = new System.Drawing.Point(10, 40);
             this.buttonPartialTypes.Name = "buttonPartialTypes";
-            this.buttonPartialTypes.Size = new System.Drawing.Size(770, 23);
-            this.buttonPartialTypes.TabIndex = 2;
-            this.buttonPartialTypes.Text = "Create and use";
+            this.buttonPartialTypes.Size = new System.Drawing.Size(200, 23);
+            this.buttonPartialTypes.TabIndex = 5;
+            this.buttonPartialTypes.Text = "Partial types";
             this.buttonPartialTypes.UseVisualStyleBackColor = true;
-            this.buttonPartialTypes.Click += new System.EventHandler(this.buttonPartialTypes_Click);
+            this.buttonPartialTypes.Click += new System.EventHandler(this.ButtonPartialTypes_Click);
+            // 
+            // buttonAnonymousMethods
+            // 
+            this.buttonAnonymousMethods.Enabled = false;
+            this.buttonAnonymousMethods.Location = new System.Drawing.Point(10, 70);
+            this.buttonAnonymousMethods.Name = "buttonAnonymousMethods";
+            this.buttonAnonymousMethods.Size = new System.Drawing.Size(200, 23);
+            this.buttonAnonymousMethods.TabIndex = 6;
+            this.buttonAnonymousMethods.Text = "Anonymous methods";
+            this.buttonAnonymousMethods.UseVisualStyleBackColor = true;
+            // 
+            // buttonIterators
+            // 
+            this.buttonIterators.Enabled = false;
+            this.buttonIterators.Location = new System.Drawing.Point(240, 10);
+            this.buttonIterators.Name = "buttonIterators";
+            this.buttonIterators.Size = new System.Drawing.Size(200, 23);
+            this.buttonIterators.TabIndex = 7;
+            this.buttonIterators.Text = "Iterators";
+            this.buttonIterators.UseVisualStyleBackColor = true;
+            // 
+            // buttonNullableTypes
+            // 
+            this.buttonNullableTypes.Enabled = false;
+            this.buttonNullableTypes.Location = new System.Drawing.Point(240, 40);
+            this.buttonNullableTypes.Name = "buttonNullableTypes";
+            this.buttonNullableTypes.Size = new System.Drawing.Size(200, 23);
+            this.buttonNullableTypes.TabIndex = 8;
+            this.buttonNullableTypes.Text = "Nullable types";
+            this.buttonNullableTypes.UseVisualStyleBackColor = true;
+            // 
+            // buttonProperties
+            // 
+            this.buttonProperties.Enabled = false;
+            this.buttonProperties.Location = new System.Drawing.Point(240, 70);
+            this.buttonProperties.Name = "buttonProperties";
+            this.buttonProperties.Size = new System.Drawing.Size(200, 23);
+            this.buttonProperties.TabIndex = 9;
+            this.buttonProperties.Text = "Properties";
+            this.buttonProperties.UseVisualStyleBackColor = true;
+            // 
+            // buttonDelegates
+            // 
+            this.buttonDelegates.Enabled = false;
+            this.buttonDelegates.Location = new System.Drawing.Point(470, 10);
+            this.buttonDelegates.Name = "buttonDelegates";
+            this.buttonDelegates.Size = new System.Drawing.Size(200, 23);
+            this.buttonDelegates.TabIndex = 10;
+            this.buttonDelegates.Text = "Delegates";
+            this.buttonDelegates.UseVisualStyleBackColor = true;
+            // 
+            // buttonCovariance
+            // 
+            this.buttonCovariance.Enabled = false;
+            this.buttonCovariance.Location = new System.Drawing.Point(470, 40);
+            this.buttonCovariance.Name = "buttonCovariance";
+            this.buttonCovariance.Size = new System.Drawing.Size(200, 23);
+            this.buttonCovariance.TabIndex = 11;
+            this.buttonCovariance.Text = "Covariance";
+            this.buttonCovariance.UseVisualStyleBackColor = true;
+            // 
+            // buttonStaticClasses
+            // 
+            this.buttonStaticClasses.Enabled = false;
+            this.buttonStaticClasses.Location = new System.Drawing.Point(470, 70);
+            this.buttonStaticClasses.Name = "buttonStaticClasses";
+            this.buttonStaticClasses.Size = new System.Drawing.Size(200, 23);
+            this.buttonStaticClasses.TabIndex = 12;
+            this.buttonStaticClasses.Text = "StaticClasses";
+            this.buttonStaticClasses.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(684, 562);
+            this.Controls.Add(this.buttonStaticClasses);
+            this.Controls.Add(this.buttonCovariance);
+            this.Controls.Add(this.buttonDelegates);
+            this.Controls.Add(this.buttonProperties);
+            this.Controls.Add(this.buttonNullableTypes);
+            this.Controls.Add(this.buttonIterators);
+            this.Controls.Add(this.buttonAnonymousMethods);
+            this.Controls.Add(this.buttonPartialTypes);
+            this.Controls.Add(this.buttonGenerics);
             this.Controls.Add(this.log);
-            this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C# version 2";
-            this.tabControl.ResumeLayout(false);
-            this.tabPageGenerics.ResumeLayout(false);
-            this.tabPagePartialTypes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.TabPage tabPageGenerics;
-        private System.Windows.Forms.TabPage tabPagePartialTypes;
-        private System.Windows.Forms.TabPage tabPageAnonymousMethods;
-        private System.Windows.Forms.TabPage tabPageIterators;
-        private System.Windows.Forms.TabPage tabPageNullableTypes;
-        private System.Windows.Forms.TabPage tabPageProperties;
-        private System.Windows.Forms.TabPage tabPageDelegates;
-        private System.Windows.Forms.TabPage tabPageCovariance;
-        private System.Windows.Forms.TabPage tabPageStaticClasses;
-        private System.Windows.Forms.Button buttonGenerics;
-        private System.Windows.Forms.Label labelGenerics;
         private System.Windows.Forms.RichTextBox log;
+        private System.Windows.Forms.Button buttonGenerics;
         private System.Windows.Forms.Button buttonPartialTypes;
-        private System.Windows.Forms.Label labelPartialTypes;
+        private System.Windows.Forms.Button buttonAnonymousMethods;
+        private System.Windows.Forms.Button buttonIterators;
+        private System.Windows.Forms.Button buttonNullableTypes;
+        private System.Windows.Forms.Button buttonProperties;
+        private System.Windows.Forms.Button buttonDelegates;
+        private System.Windows.Forms.Button buttonCovariance;
+        private System.Windows.Forms.Button buttonStaticClasses;
     }
 }
 

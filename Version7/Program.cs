@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Version1
+namespace Version7
 {
     internal static class Program
     {
@@ -10,7 +10,7 @@ namespace Version1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form7());
         }
     }
 }

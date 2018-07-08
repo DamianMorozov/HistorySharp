@@ -1,14 +1,18 @@
-docs.microsoft.com/en-US/dotnet/csharp/whats-new/csharp-version-history
-http://www.tutorialsteacher.com/csharp/csharp-version-history
 ----------------------------------------------------------------------------------------------------
-.FRAMEWORK   CLR  C#   VISUAL STUDIO
+Link: docs.microsoft.com/en-US/dotnet/csharp/whats-new/csharp-version-history
+Link: http://www.tutorialsteacher.com/csharp/csharp-version-history
+Book: 2017 - J.Albahari, B.Albahari - C# 7.0 in a Nutshell - A brief history of C# - Page 8
 ----------------------------------------------------------------------------------------------------
-1.0          1.0  1.0  2002
-1.1          1.1  1.2  2003
+.FRAMEWORK   | CLR | C#  | VISUAL STUDIO
+-------------+-----+-----+---------------------------------------------------------------------------
+1.0          | 1.0 | 1.0 | 2002
+1.1          | 1.1 | 1.2 | 2003
 Basic features
 ----------------------------------------------------------------------------------------------------
-2.0          2.0  2.0  2005
-3.0          2.0  2.0  2005 + Extensions
+.FRAMEWORK   | CLR | C#  | VISUAL STUDIO
+-------------+-----+-----+---------------------------------------------------------------------------
+2.0          | 2.0 | 2.0 | 2005
+3.0          | 2.0 | 2.0 | 2005 + Extensions
 Generics
 Partial types
 Anonymous methods
@@ -19,7 +23,9 @@ Method group conversions (delegates)
 Covariance and Contra-variance
 Static classes
 ----------------------------------------------------------------------------------------------------
-3.5          2.0  3.0  2008
+.FRAMEWORK   | CLR | C#  | VISUAL STUDIO
+-------------+-----+-----+---------------------------------------------------------------------------
+3.5          | 2.0 | 3.0 | 2008
 Implicitly typed local variables
 Object and collection initializers
 Auto-Implemented properties
@@ -30,18 +36,24 @@ Lambda expressions
 Expression trees
 Partial Methods
 ----------------------------------------------------------------------------------------------------
-4.0          4.0  4.0  2010
+.FRAMEWORK   | CLR | C#  | VISUAL STUDIO
+-------------+-----+-----+---------------------------------------------------------------------------
+4.0          | 4.0 | 4.0 | 2010
 Dynamic binding (late binding)
 Named and optional arguments
 Generic co- and contravariance
 Embedded interop types
 ----------------------------------------------------------------------------------------------------
-4.5          4.0  5.0  2012
-4.5.1        4.0  5.0  2013
+.FRAMEWORK   | CLR | C#  | VISUAL STUDIO
+-------------+-----+-----+---------------------------------------------------------------------------
+4.5          | 4.0 | 5.0 | 2012
+4.5.1        | 4.0 | 5.0 | 2013
 Async features
 Caller information
 ----------------------------------------------------------------------------------------------------
-4.6          4.0  6    2015
+.FRAMEWORK   | CLR | C#  | VISUAL STUDIO
+-------------+-----+-----+---------------------------------------------------------------------------
+4.6          | 4.0 | 6   | 2015
 Expression Bodied Methods
 Auto-property initializer
 nameof Expression
@@ -50,8 +62,10 @@ Await in catch block
 Exception Filter
 String Interpolation
 ----------------------------------------------------------------------------------------------------
-4.7          4.0  7    2017
-out variables
+.FRAMEWORK   | CLR | C#  | VISUAL STUDIO
+-------------+-----+-----+---------------------------------------------------------------------------
+4.7          | 4.0 | 7   | 2017
+Out variables
 Tuples
 Discards
 Pattern Matching
@@ -62,7 +76,8 @@ throw Expressions
 
 ----------------------------------------------------------------------------------------------------
 .NET CORE VERSION  RELEASE DATE   SUPPORT LEVEL
-1.0                June 27, 2016  LTS
-1.1                Nov 16, 2016   LTS*
-2.0                Aug 14, 2017   Current
+------------------+---------------+-----------------------------------------------------------------
+1.0               | June 27, 2016 | LTS
+1.1               | Nov 16, 2016  | LTS*
+2.0               | Aug 14, 2017  | Current
 ----------------------------------------------------------------------------------------------------
