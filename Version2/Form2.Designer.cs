@@ -61,7 +61,7 @@
             this.buttonGenerics.TabIndex = 4;
             this.buttonGenerics.Text = "Generics";
             this.buttonGenerics.UseVisualStyleBackColor = true;
-            this.buttonGenerics.Click += new System.EventHandler(this.ButtonGenerics_Click);
+            this.buttonGenerics.Click += new System.EventHandler(this.buttonGenerics_Click);
             // 
             // buttonPartialTypes
             // 
@@ -71,7 +71,7 @@
             this.buttonPartialTypes.TabIndex = 5;
             this.buttonPartialTypes.Text = "Partial types";
             this.buttonPartialTypes.UseVisualStyleBackColor = true;
-            this.buttonPartialTypes.Click += new System.EventHandler(this.ButtonPartialTypes_Click);
+            this.buttonPartialTypes.Click += new System.EventHandler(this.buttonPartialTypes_Click);
             // 
             // buttonAnonymousMethods
             // 

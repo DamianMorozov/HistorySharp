@@ -21,7 +21,7 @@ namespace Version2
         private class SomeClass { }
 
         // Generics
-        private void ButtonGenerics_Click(object sender, EventArgs e)
+        private void buttonGenerics_Click(object sender, EventArgs e)
         {
             log.Clear();
 
@@ -56,7 +56,7 @@ namespace Version2
         }
         
         // Partial Classes and Methods
-        private void ButtonPartialTypes_Click(object sender, EventArgs e)
+        private void buttonPartialTypes_Click(object sender, EventArgs e)
         {
             log.Clear();
 
@@ -109,66 +109,6 @@ partial class ClassWithNestedClass
     partial class NestedClass { }
 }
 ");
-
-        }
-
-        private void tabPageGenerics_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelGenerics_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPagePartialTypes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelPartialTypes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageAnonymousMethods_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageIterators_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageNullableTypes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageProperties_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageDelegates_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageCovariance_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageStaticClasses_Click(object sender, EventArgs e)
-        {
 
         }
 
